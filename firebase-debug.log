@@ -1,0 +1,52 @@
+[debug] [2021-03-27T12:20:55.362Z] ----------------------------------------------------------------------
+[debug] [2021-03-27T12:20:55.366Z] Command:       /usr/local/bin/firebase /home/yashasvi/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase init
+[debug] [2021-03-27T12:20:55.366Z] CLI Version:   9.8.0
+[debug] [2021-03-27T12:20:55.366Z] Platform:      linux
+[debug] [2021-03-27T12:20:55.366Z] Node Version:  v12.2.0
+[debug] [2021-03-27T12:20:55.367Z] Time:          Sat Mar 27 2021 17:50:55 GMT+0530 (India Standard Time)
+[debug] [2021-03-27T12:20:55.367Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-03-27T12:20:55.375Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-03-27T12:20:55.376Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/yashasvi
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using reactjs-calendar-a6142. 
+[debug] [2021-03-27T12:21:10.327Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/reactjs-calendar-a6142 [none]
+[debug] [2021-03-27T12:21:11.505Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/reactjs-calendar-a6142 200
+[debug] [2021-03-27T12:21:11.505Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/reactjs-calendar-a6142 {"projectId":"reactjs-calendar-a6142","projectNumber":"975929718324","displayName":"reactjs-calendar","name":"projects/reactjs-calendar-a6142","resources":{"hostingSite":"reactjs-calendar-a6142"},"state":"DELETED"}
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2021-03-27T12:21:31.106Z] TypeError: Cannot read property 'setRawMode' of null
+    at ReadStream.setRawMode (tty.js:71:28)
+    at Interface._setRawMode (readline.js:275:16)
+    at Interface.close (readline.js:398:10)
+    at ReadStream.ontermend (readline.js:185:10)
+    at ReadStream.emit (events.js:201:15)
+    at ReadStream.EventEmitter.emit (domain.js:471:20)
+    at endReadableNT (_stream_readable.js:1130:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:9)
